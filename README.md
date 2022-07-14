@@ -1,2 +1,2 @@
-# move_counts_visualizer
+# Move count visualizer
 chess pieces move count visualiser
