@@ -3,7 +3,6 @@
     --tile2: #b58863;
 }
 
-
 main{
     margin: 0px;
     padding: 0px;
@@ -25,6 +24,7 @@ main .row{
     flex-wrap: nowrap;
 }
 main .tile{
+    cursor: pointer;
     margin: 0px;
     padding: 0px;
     width: 12.5%;
@@ -33,6 +33,9 @@ main .tile{
     max-height: 90px;
     border: 2px black solid;
     box-sizing: border-box; 
+}
+main .tile:hover{
+    background-color: #67e64b !important;
 }
 main .row:nth-child(2n) .tile:nth-child(2n), main .row:nth-child(2n+1) .tile:nth-child(2n+1){
     background-color: var(--tile1);
