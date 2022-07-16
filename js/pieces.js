@@ -22,11 +22,11 @@ class Piece{
     }
 }
 
-let Rook = new Piece("Rook", "x0", 2, "img/rook.png")
-let Bishop = new Piece("Bishop", "0x", 2, "img/bishop.png")
-let Knight = new Piece("Knight", "l", 6, "img/knight.png")
-let Queen = new Piece("Queen", "xx", 2, "img/queen.png")
-let King = new Piece("King", "11", 7, "img/king.png")
+let Rook = new Piece("Rook", "x0", 2, "img/rook.svg")
+let Bishop = new Piece("Bishop", "0x", 2, "img/bishop.svg")
+let Knight = new Piece("Knight", "l", 6, "img/knight.svg")
+let Queen = new Piece("Queen", "xx", 2, "img/queen.svg")
+let King = new Piece("King", "11", 7, "img/king.svg")
 const pieces = [Rook, Bishop, Knight, Queen, King]
 
 

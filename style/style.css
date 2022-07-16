@@ -30,10 +30,13 @@ main .tile{
     padding: 0px;
     width: 12.5%;
     height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 92%;
     max-width: var(--tile-size);
     max-height: var(--tile-size);
     border: 2px black solid;
-    box-sizing: border-box; 
+    box-sizing: border-box;  
 }
 main .tile:hover{
     background-color: #67e64b !important;
