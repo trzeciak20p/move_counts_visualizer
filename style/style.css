@@ -1,6 +1,7 @@
 :root{
     --tile1: #f0d9b5;
     --tile2: #b58863;
+    --tile-size: 90px;
 }
 
 main{
@@ -29,8 +30,8 @@ main .tile{
     padding: 0px;
     width: 12.5%;
     height: 100%;
-    max-width: 90px;
-    max-height: 90px;
+    max-width: var(--tile-size);
+    max-height: var(--tile-size);
     border: 2px black solid;
     box-sizing: border-box; 
 }
@@ -42,4 +43,16 @@ main .row:nth-child(2n) .tile:nth-child(2n), main .row:nth-child(2n+1) .tile:nth
 }
 main .row:nth-child(2n) .tile:nth-child(2n+1), main .row:nth-child(2n+1) .tile:nth-child(2n){
     background-color: var(--tile2);
+}
+
+#choose_piece{
+    background-color: #666;
+}
+#choose_piece input{
+    margin: 10px;
+    width: var(--tile-size);
+    height: var(--tile-size);
+    line-height: var(--tile-size);
+    font-size: 20px;
+
 }

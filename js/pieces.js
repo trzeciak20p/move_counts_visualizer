@@ -26,7 +26,7 @@ let Bishop = new Piece("Bishop", "0x", 2, "img/bishop.png")
 let Knight = new Piece("Knight", "l", 6, "img/knight.png")
 let Queen = new Piece("Queen", "xx", 2, "img/queen.png")
 let King = new Piece("King", "11", 7, "img/king.png")
-
+const pieces = [Rook, Bishop, Knight, Queen, King]
 
 
 
