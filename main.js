@@ -8,18 +8,21 @@ for(i = 0; i < 8; i++){     //putting tiles references into board table
     for(j = 0; j < 8; j++){
         board[i][j] = document.querySelectorAll('main .row')[i].querySelectorAll('.tile')[j]
         board[i][j].addEventListener("click", (i, j) =>{
-            movePiece(i, j)
+            console.log(i)
+            console.log(j)
+
+            // movePiece(i, j)
         })
-
-        console.log(board[i][j])
-
     }
 }
 
 function movePiece(i, j){
-    if(previous_tile[0] != null){
+    console.log(i,j)
+    if(previous_tile[0] != null){          //wywalenie poprzedniego pionka
         board[previous_tile[i]][previous_tile[j]].style.backgroundImage = "none"
     }
-    
+    board[i][j].style.backgroundImage = "ae"
+
+
 }
 
