@@ -13,16 +13,9 @@ for(let i = 0; i < 8; i++){
     } 
 }
 
-let ae = new Piece(1,2,3,4)
-ae.movePiece2()
+
 
 function movePiece(i, j){
-    console.log(i, j)
-    if(previous_tile[0] != null){          //wywalenie poprzedniej figury
-        board[previous_tile[i]][previous_tile[j]].style.backgroundImage = "none"
-    }
-    board[i][j].style.backgroundImage = 
-
-    previous_tile = [i, j]
+    
 }
 
