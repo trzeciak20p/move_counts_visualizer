@@ -13,7 +13,8 @@ for(let i = 0; i < 8; i++){
     } 
 }
 
-
+let ae = new Piece(1,2,3,4)
+ae.movePiece2()
 
 function movePiece(i, j){
     console.log(i, j)
