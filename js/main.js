@@ -9,7 +9,7 @@ for(let i = 0; i < 8; i++){
     for(let j = 0; j < 8; j++){
         board[i][j] = document.querySelectorAll('main .row')[i].querySelectorAll('.tile')[j]   //putting tiles references into board table    
         board[i][j].addEventListener("click", () =>{        //adding them events
-            movePiece(i, j)
+            movePieceIndicator(i, j)
         })
     } 
 }
@@ -20,7 +20,7 @@ for(let i = 0; i < 5; i++){
     })
 } 
 
-function movePiece(i, j){
-    
+function movePieceIndicator(i, j){
+    pieces[actuall_piece].movePiece(i, j)
 }
 

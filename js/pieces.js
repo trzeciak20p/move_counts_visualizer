@@ -10,13 +10,14 @@ class Piece{
     //  1st determines vertical and horizontal movement, 2nd - diagonal movement
     //  letters meaning: number - self explainatory, x - no limit of moved tiles, l - the knight move (special case)  
 
-    movePiece2(i, j){
+    movePiece(i, j){
         console.log(i, j)
         if(previous_tile[0] != null){          //wywalenie poprzedniej figury
-            board[previous_tile[i]][previous_tile[j]].style.backgroundImage = "none"
+            board[previous_tile[0]][previous_tile[1]].style.backgroundImage = "none"
         }
         board[i][j].style.backgroundImage = "url(" + this.image_url + ")"
     
+
         previous_tile = [i, j]
     }
 }
