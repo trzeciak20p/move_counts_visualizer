@@ -5,6 +5,10 @@
 }
 
 main{
+    display: flex;
+    flex-direction: row;
+}
+main #board{
     margin: 0px;
     padding: 0px;
     width: 720px;
@@ -49,13 +53,42 @@ main .row:nth-child(2n) .tile:nth-child(2n+1), main .row:nth-child(2n+1) .tile:n
 }
 
 #choose_piece{
+    margin-left: 20px;
     background-color: #666;
+    display: flex;
+    flex-direction: column;
 }
 #choose_piece input{
+    cursor: pointer;
     margin: 10px;
     width: var(--tile-size);
     height: var(--tile-size);
     line-height: var(--tile-size);
     font-size: 20px;
-
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-color: var(--tile2);
 }
+#choose_piece input:hover{
+    background-color: var(--tile1);
+}
+#choose_piece input:nth-child(1){
+    background-image: url("../img/rook.svg");
+}
+#choose_piece input:nth-child(2){
+    background-image: url("../img/bishop.svg");
+}
+#choose_piece input:nth-child(3){
+    background-image: url("../img/knight.svg");
+}
+#choose_piece input:nth-child(4){
+    background-image: url("../img/queen.svg");
+}
+#choose_piece input:nth-child(5){
+    background-image: url("../img/king.svg");
+}
+
+
+
+
