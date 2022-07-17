@@ -16,10 +16,8 @@ for(let i = 0; i < 8; i++){
 
 for(let i = 0; i < 5; i++){    
     document.querySelectorAll('#choose_piece input')[i].addEventListener("click", () =>{  
-        console.log(actuall_piece, i)
         document.querySelectorAll('#choose_piece input')[actuall_piece].style.backgroundColor = "var(--tile2)"
         document.querySelectorAll('#choose_piece input')[i].style.backgroundColor = "var(--green)"
-        
         actuall_piece = i   //updateing choosen piece
     })
 } 
