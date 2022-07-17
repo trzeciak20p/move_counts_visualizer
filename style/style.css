@@ -2,6 +2,7 @@
     --tile1: #f0d9b5;
     --tile2: #b58863;
     --tile-size: 90px;
+    --green: #67e64b;
 }
 
 main{
@@ -43,7 +44,7 @@ main .tile{
     box-sizing: border-box;  
 }
 main .tile:hover{
-    background-color: #67e64b !important;
+    background-color: var(--green) !important;
 }
 main .row:nth-child(2n) .tile:nth-child(2n), main .row:nth-child(2n+1) .tile:nth-child(2n+1){
     background-color: var(--tile1);
@@ -71,7 +72,7 @@ main .row:nth-child(2n) .tile:nth-child(2n+1), main .row:nth-child(2n+1) .tile:n
     background-color: var(--tile2);
 }
 #choose_piece input:hover{
-    background-color: var(--tile1);
+    background-color: var(--tile1) !important;
 }
 #choose_piece input:nth-child(1){
     background-image: url("../img/rook.svg");
