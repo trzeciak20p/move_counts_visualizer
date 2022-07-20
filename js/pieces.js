@@ -14,7 +14,11 @@ class Piece{
         
         let move = 1
         while(move <= this.max_moves){
-
+            for(let x = 0; x < 8; x++){         
+                for(let y = 0; y < 8; y++){
+                        // tu se przechodzimy przez całą tablice i po kolei patrzymy czy z danego pola można było ruch wykonać
+                } 
+            }
 
 
 
@@ -32,10 +36,11 @@ class Piece{
     
         for(let x = 0; x < 8; x++){         
             for(let y = 0; y < 8; y++){
-                made_moves[x][y] = 0        //clearing table with previously shown moves
+                made_moves[x][y] = null        //clearing table with previously shown moves
             } 
         }
-
+            
+        made_moves[i, j] = 0
         this.showMoves(i, j)
 
         previous_tile = [i, j]
